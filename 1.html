@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+        /*1)advanced selector
+        a)attribute selector*/
+        input[type="text"] {
+            border:5px dotted blue;
+        }  
+
+        /*child selector*/ 
+        ol>li{color: yellowgreen;}
+
+        /*sibling selector*/
+        h1+p{font-size: 30px;}
+
+        /*2)pseduo classes*/
+
+        a:hover{color: brown;}
+
+        /*nth chile*/
+        li:nth-child(2){background-color: pink;}
+
+        /*not selector*/
+        p:not(#i1){color: green;}
+
+        /*2)pseduo element befor*/
+        p:before{content:"hurrey"....}
+
+        /*befor*/
+        p:after{content:"furrey"}
+
+        /*first letter*/
+        p:first-letter{font-size: 50px;}
+
+        </style>
+        <body>
+            <a href="#">click here</a><br><br>
+            <form>
+                name: <input type="text"><br><br>
+                age: <input type="number">
+            </form>
+            <ol>
+                <li>apple</li>
+                <li>organe</li>
+                <li>berry</li>
+                <li>pineapple</li>
+            </ol>
+            <h1>hello</h1>
+            <p id="i1">everyone...</p>
+            <p>i hope u all are enjoying the class....</p>
+            <p>hey....</p>
+        </body>
+    </head>
+</html>
